@@ -1,0 +1,41 @@
+<div>
+    <h1>X  : {{x}}</h1>
+    <h1>O  : {{o}}</h1>
+</div>
+<div class="row">
+    <button (click)="submit1()" [disabled]="n1">1</button>
+    <button (click)="submit2()" [disabled]="n2">2</button>
+    <button (click)="submit3()" [disabled]="n3">3</button>
+</div>
+<div class="row">
+    <button (click)="submit4()" [disabled]="n4">4</button>
+    <button (click)="submit5()" [disabled]="n5">5</button>
+    <button (click)="submit6()" [disabled]="n6">6</button>
+</div>
+<div class="row">
+    <button (click)="submit7()" [disabled]="n7">7</button>
+    <button (click)="submit8()" [disabled]="n8">8</button>
+    <button (click)="submit9()" [disabled]="n9">9</button>
+</div>
+
+<br>
+<h1 style="text-align: center;">{{turn}}'s turn</h1>
+<br>
+
+<div class="row border-r">
+    <div class="col border-c">{{v1}}</div>
+    <div class="col border-c">{{v2}}</div>
+    <div class="col">{{v3}}</div>
+</div>
+<div class="row border-r">
+    <div class="col border-c">{{v4}}</div>
+    <div class="col border-c">{{v5}}</div>
+    <div class="col">{{v6}}</div>
+</div>
+<div class="row">
+    <div class="col border-c">{{v7}}</div>
+    <div class="col border-c">{{v8}}</div>
+    <div class="col">{{v9}}</div>
+</div>
+
+<button (click)="restart()" style="width: 60px;height: 45px;font-size: 15px;">Reset</button>

@@ -1,0 +1,19 @@
+
+<form class="form" (ngSubmit)="onSubmit()">
+    <label>Add an item</label><br>
+    <input type="text" name="name" [(ngModel)]="abc" placeholder="Enter An Item Name" required>
+    <button  type="submit" class="btn">Add</button>
+</form>
+
+<app-data *ngFor="let todo of todos"[todo]="todo" 
+(deletetodo)="deletetodo($event)">
+</app-data>
+<hr>
+<hr>
+
+<h4>
+    Deleted Taks
+</h4>
+ <div *ngFor="let f of del">
+    {{f.name}}
+</div>

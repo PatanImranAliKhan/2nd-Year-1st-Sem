@@ -1,0 +1,31 @@
+
+.row{
+    height: 100px;
+}
+
+.col{
+    height: 100px;
+    width: 100px;
+    float: left;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.border-c {
+    border-right: 10px solid black;
+}
+
+.border-r{
+    border-bottom: 10px solid black;
+}
+
+
+
+button {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    font-size: 50px;
+    color: #ffffff;
+}

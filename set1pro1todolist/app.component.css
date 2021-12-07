@@ -1,0 +1,15 @@
+nav a:visited, a:link{
+    color: #fff;
+}
+
+nav a:hover {
+    color: #f0291b;
+}
+nav a:active{
+    color: #039be5;
+}
+
+nav{
+    background-color: #3e40d1;
+    padding: 1%;
+} 

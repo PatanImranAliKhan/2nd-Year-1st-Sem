@@ -1,0 +1,40 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.main{
+    display:inline;
+}
+
+input[type=checkbox] {
+ margin:0px;
+ padding:4px;
+}
+
+
+.edit{
+    background: #00ff22;
+    color:#fff;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+}
+.del {
+    background: #00ff22;
+    color:#fff;
+    border: none;
+    padding: 5px 9px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+}
+
+.todo {
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+}
+
+.is-complete {
+    text-decoration: line-through;
+}

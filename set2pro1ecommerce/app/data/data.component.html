@@ -1,0 +1,36 @@
+<div class="container">
+    <form class="formcontrol" #userForm="ngForm">
+        <div class="form-group">
+            <label style="text-align: center;">Select the sport</label><br>
+            <select (blur)="validateTopic(sport.value)" (change)="validateTopic(sport.value)" #sport="ngModel" name="sport" [class.is-invalid]="sub && sport.touched" class="custom-select" [(ngModel)]="a" required>
+                <option *ngFor="let sp of sports" value={{sp}}>{{ sp }}</option>
+            </select>
+            <div class="text-danger" style="color:red" *ngIf="sub" ><small>Please select the sport </small> </div>
+            <button class="btn btn-primary" type="submit" [disabled]="!userForm.valid" (click)="submit()">Add</button>
+        </div>
+    </form>
+</div>
+<div *ngIf="con">
+    <mat-grid-list cols="2" rowHeight="2:1" style="text-align: center;">
+        <ng-container *ngFor="let d of data">
+            <mat-grid-tile>
+                <mat-card class="example-card">
+                    <mat-card-header>
+                    <mat-card-title><h1>{{d.name}}</h1></mat-card-title>
+                    </mat-card-header>
+                    <a href={{d.image}} target="_blank"><img mat-card-image src={{d.image}} alt={{d.name}} style="width: 60mm; height: 35mm;"></a>
+                    <mat-card-content>
+                        <label>Price : &nbsp; ${{d.price}}</label><br>
+                        <label>Quantity : </label>
+                        <select  #sport="ngModel" name="sport" class="custom-select" [(ngModel)]="b" required>
+                            <option *ngFor="let n1 of n" value={{n1}}>{{ n1 }}</option>
+                        </select>
+                    </mat-card-content>
+                    <mat-card-actions>
+                    <button (click)="tocart(d)" style="width: 30mm;"><i class="fa fa-cart-plus" aria-hidden="true"></i></button>
+                    </mat-card-actions>
+                  </mat-card>
+            </mat-grid-tile>
+        </ng-container>
+    </mat-grid-list>
+</div>

@@ -1,0 +1,25 @@
+<div>
+    <h1>X wins : {{x}}</h1>
+    <h1>O wins : {{o}}</h1>
+</div>
+<div class="row">
+    <button (click)="submit1()" [disabled]="n1"><h1>{{v1}}</h1></button>
+    <button (click)="submit2()" [disabled]="n2"><h1>{{v2}}</h1></button>
+    <button (click)="submit3()" [disabled]="n3"><h1>{{v3}}</h1></button>
+</div>
+<div class="row">
+    <button (click)="submit4()" [disabled]="n4"><h1>{{v4}}</h1></button>
+    <button (click)="submit5()" [disabled]="n5"><h1>{{v5}}</h1></button>
+    <button (click)="submit6()" [disabled]="n6"><h1>{{v6}}</h1></button>
+</div>
+<div class="row">
+    <button (click)="submit7()" [disabled]="n7"><h1>{{v7}}</h1></button>
+    <button (click)="submit8()" [disabled]="n8"><h1>{{v8}}</h1></button>
+    <button (click)="submit9()" [disabled]="n9"><h1>{{v9}}</h1></button>
+</div>
+
+<br>
+<br>
+<button (click)="reset()" style="width: 50px;height: 50px;">Reset</button>
+
+<button (click)="restart()" style="width: 50px;height: 50px;">Restart</button>

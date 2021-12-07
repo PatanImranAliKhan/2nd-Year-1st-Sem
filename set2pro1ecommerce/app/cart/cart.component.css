@@ -1,0 +1,18 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr{
+    border: 2px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+}
+tbody, td, img{
+    width: 30mm;
+    height: 30mm;
+}
+thead,th {
+    padding: 15px;
+}

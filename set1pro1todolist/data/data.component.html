@@ -1,0 +1,12 @@
+<div [ngClass]="setClass()" >
+    <div>
+        <input type="checkbox" (change)="changetodo(todo)">
+        {{ todo.name }}
+        <button class="del" (click)="deleteTodo(todo)"><i class="fa fa-trash-o"></i></button>
+        <button class="edit"(click)="edittodo(todo)"><i class="fa fa-pencil"></i></button>
+        <div *ngIf="nm">
+            <input type="text" name="name" [(ngModel)]="abc" placeholder="Enter the edited name" required>
+            <button type="submit" (click)="onclick(todo)">Submit</button>
+        </div>
+    </div>
+</div>

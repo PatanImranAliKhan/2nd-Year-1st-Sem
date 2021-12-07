@@ -1,0 +1,8 @@
+.row {
+    width: 320px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    color: black;
+}

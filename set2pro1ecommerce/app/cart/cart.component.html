@@ -1,0 +1,23 @@
+<table>
+  <thead style="background-color: green;">
+    <tr>
+      <th>name</th>
+      <th>Image</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let c of cart">
+    <tr>
+      <td>{{c.name}}</td>
+      <td><img src={{c.image}} alt={{c.name}} width="50mm" height="50mm"></td>
+      <td>{{c.availability}}</td>
+      <td>{{c.price}}</td>
+      <td><button (click)="remove(c)">remove</button></td>
+    </tr>
+  </tbody>
+</table> 
+<div style="text-align: right;">
+    <label>Total Price : {{sum}}</label>
+</div> 

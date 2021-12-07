@@ -1,0 +1,44 @@
+button{
+    padding:6px;
+    width: 25px;
+    background-color:#448AFF;
+    color: #fff
+}
+
+.blank {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.spin {
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+span{
+    margin-left: 50px;
+}
+
+.abcd{
+    margin-right: 20px;
+    size: 25ch;
+}
+.efgh{
+    margin-right: 20px;
+    size: 25em;
+}
+.ijkl {
+    margin-right: 20px;
+    size: 25ch;
+}
+.mnop {
+    margin-right: 20px;
+    size: 25ch;
+}
+.main {
+    background-color: #69F0AE;
+    font-size: 2em;
+}
+.foot {
+    text-align: center;
+}
